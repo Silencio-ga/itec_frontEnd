@@ -1,16 +1,36 @@
-# React + Vite
+# Catálogo de Libros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para gestionar un catálogo de libros. Permite listar, crear, editar, eliminar y guardar libros favoritos.
 
-Currently, two official plugins are available:
+Desarrollada con **React 19 + Vite + TailwindCSS 4** (frontend) y **FastAPI** (backend).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Requisitos
 
-## React Compiler
+- Node.js 18+
+- Python 3.11+
+- uv (gestor de paquetes de Python)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Ejecutar la aplicación
 
-## Expanding the ESLint configuration
+### Backend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd BackEnd
+uv run fastapi dev src/main.py
+```
+
+El servidor se levanta en `http://localhost:8000`.
+
+### Frontend
+
+```bash
+cd FrontEnd
+npm install
+npm run dev
+```
+
+La aplicación se abre en `http://localhost:5173`.
+
+## Autor
+
+Gabriel Acuña
